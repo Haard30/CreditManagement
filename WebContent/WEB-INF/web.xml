@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <display-name>User</display-name>
+  <servlet>
+    <servlet-name>View Intern</servlet-name>
+    <servlet-class>viewInter</servlet-class>   
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>View Intern</servlet-name>
+    <url-pattern>*.view</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+   <servlet-name>Trans Logic</servlet-name>
+    <servlet-class>TransferLogic</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>Trans Logic</servlet-name>
+    <url-pattern>*.logic</url-pattern>  
+  </servlet-mapping>
+  
+</web-app>
